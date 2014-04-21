@@ -37,7 +37,7 @@ $( "#testList" ).on( "pagebeforecreate",function(){
 		//console.log(articleNumber);
 		
 		
-		$.get("http://nuevosociales.com.ar/app/"+urlArt+articleNumber+'.txt', function( data ) {
+		$.get("http://nuevosociales.com.ar/app/proxy.php?url="+articleNumber+'.txt', function( data ) {
 		//$.get( urlArt+articleNumber+'.txt', function( data ) {
 			//console.log(title);
 			console.log(data);
