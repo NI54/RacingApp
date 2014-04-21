@@ -3723,7 +3723,7 @@ ol.ui-listview > li img:first-child + * ~ * {
 	
 }
 /*paneles mios*/
-.ui-panel {
+/*.ui-panel {
 	width: 10em;
 	padding-right:0;
 }
@@ -3744,7 +3744,7 @@ ol.ui-listview > li img:first-child + * ~ * {
 	right: -10em;
 }
 /* Panel left open animated */
-.ui-panel-animate.ui-panel-page-content-position-left {
+/*.ui-panel-animate.ui-panel-page-content-position-left {
 	left: 0;
 	right: 0;
 	right: 0;
@@ -3757,4 +3757,4 @@ ol.ui-listview > li img:first-child + * ~ * {
 }
 .ui-responsive-panel .ui-panel-page-content-open.ui-panel-page-content-position-left {
 		margin-right: 10em;
-}
+}*/
