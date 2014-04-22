@@ -33,23 +33,65 @@
 		<div role="main" class="ui-content" id="asd">
 			<div><img src="images/Header.png" style="width:70%;visibility:hidden;"> </div>
 			<!--<img src="images/Bkg.png"  style="position:fixed;left:30%;width:20em;top:10em"> !-->
-			<img src="images/Menu.png" style="position:fixed;width:1.5em;top:10em;left:-0.1%">
+			<img src="images/Menu.png" style="position:fixed;width:auto;top:35%;left:-0.1%;height:40%;">
 			
 			
 			<div id="noticias" style="position:relative;left:10%;padding-bottom:1em;width:80%;" filter="Noticias" >
-			asdasdasdas
-			<p>lalalalal</p></div>
+			</div>
+			<div id="Historia" style="position:relative;left:10%;padding-bottom:1em;width:80%;" filter="Historia" >
+			asdasdasdasdas
+			</div>
 			
-			
-			<!--<div id="noticias" style="position:relative;left:30%;padding-bottom:20%" filter=<?php //echo "'".$_SESSION['filter']."'"; ?> ></div>!-->
-			
-			
-			<script>
-			
-			</script>
 			
 		</div>
 		
+		<div data-role="footer" data-theme="b" align="center" data-tap-toggle="false" data-position="fixed"><div style="width:50%;"><script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><ins class="adsbygoogle"  style="display:inline-block;width:13em;height:5em;"data-ad-client="ca-pub-2697362734585480" data-ad-slot="8121376450"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script><ins class="adsbygoogle"  style="display:inline-block;width:13em;height:5em;"data-ad-client="ca-pub-2697362734585480" data-ad-slot="8121376450"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script><img src="images/LogoNi.png" style="display:block;width:7em"></div> </div>
+		
+		<div data-role="panel" id="left-panel" data-theme="c" data-display="push" style="border:none;position:fixed;">
+			<li data-role="list-divider">Menu</li>
+			<div data-role="controlgroup" corners="false" data-corners="false">
+				<a href="#" class="ui-btn ui-btnSlider" style="text-align: left;" onclick="ShowSection('noticias');">
+					<img src="images/Noticias.png">
+					Noticias
+				</a>
+				<a href="#" class="ui-btn ui-btnSlider" style="text-align: left;">
+					<img src="images/Videos.png">
+					Videos
+				</a>
+				<a href="#" class="ui-btn ui-btnSlider" style="text-align: left;" onclick="ShowSection('Historia');">
+					<img src="images/Historia.png">
+					Historia
+				</a>
+				<a href="#Historia"  class="ui-btn ui-btnSlider" style="text-align: left;">
+					<img src="images/Autoridades.png">
+					Autoridades
+				</a>
+				<a href="#" class="ui-btn ui-btnSlider" style="text-align: left;">
+					<img src="images/Publicidad.png">
+					Publicidad
+				</a>
+				<a href="#" class="ui-btn ui-btnSlider" style="text-align: left;">
+					<img src="images/Legal.png">
+					Legal
+				</a>
+				<a href="#" class="ui-btn ui-btnSlider" style="text-align: left;">
+					<img src="images/Staff.png">
+					Staff
+				</a>
+				<a href="#" class="ui-btn ui-btnSlider" style="text-align: left;">
+					<img src="images/Contacto.png">
+					Contacto
+				</a>
+				<a href="#" class="ui-btn ui-btnSlider" style="text-align: left;">
+					<img src="images/Estadisticas.png">
+					Estadisticas
+				</a>
+				<a href="#" class="ui-btn ui-btnSlider" style="text-align: left;">
+					<img src="images/Plantel.png">
+					Plantel
+				</a>
+			</div>
+		</div>
 		<script src="sliderMenu.js"></script> 
 		
 		
@@ -59,7 +101,8 @@
 				//GetNews(10,"Noticias",10000);
 				//InitializeFoot("#testList");
 				GetNews(10,"Noticias",10000);
-				
+				AddSection("noticias",false);
+				AddSection("Historia",true);
 				//agregar inicializacion de header y footer tmb
 			});
 			
@@ -110,6 +153,7 @@
 	
 
 </body>
+
 
 
 </html>
