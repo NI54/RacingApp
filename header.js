@@ -10,11 +10,11 @@ $(body).append('<div id="header" data-role="header"  style="position:fixed;width
 $(window).on("orientationchange",function(){
   if(window.orientation == 0) // Portrait
   {
-    $("#imgHeader").css({"width:25em;"});
+    $( "#imgHeader" ).attr( "style", "width:25em;height:auto;" );
   }
   else // Landscape
   {
-    $("#imgHeader").css({"width:15em"});
+    $( "#imgHeader" ).attr( "style", "width:15em;height:auto;" );
   }
 });
 
