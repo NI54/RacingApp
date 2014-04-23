@@ -774,3 +774,16 @@ body {
 .newsContainer{
 	position:relative;left:10%;padding-bottom:1em;width:80%;padding-top:1em;
 }
+
+.divImage{
+	width:100%;height:auto;display:block;
+}
+.imageNota{
+	width:auto%;height:auto;border:1px solid black;top:0;border-radius:10px;display:block;
+}
+.divTitulo{
+	 width:100%;height:12em;padding-left:2%;display:block;
+}
+.tituloNota{
+	font-size:2em;
+}

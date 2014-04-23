@@ -40,7 +40,7 @@ $( "#testList" ).on( "pagebeforecreate",function(){
 		$.get("http://nuevosociales.com.ar/app/proxy.php?url=article/art"+articleNumber+'.txt', function( data ) {
 		//$.get( urlArt+articleNumber+'.txt', function( data ) {
 			//console.log(title);
-			console.log(data);
+			//console.log(data);
 			//$( '#nota' ).append( data);
 			
 			
@@ -49,8 +49,8 @@ $( "#testList" ).on( "pagebeforecreate",function(){
 			titleRep= titleRep.replace(/replaceComillasSimples/g,"'");
 			
 			$( '#nota' ).html("");
-			$( '#nota' ).append('<div style="width:30%;height:12em;float:left;" ><img src="'+urlImagenes+imagen+'" style="width:100%;height:auto;border:1px solid black;top:0;border-radius:10px;"></div>');
-			$( '#nota' ).append("<div style= 'width:68%;height:12em;display:inline-block;position:relative;float:left;top:-2em;padding-left:2%;'><p style='font-size:2em;'>"+ titleRep +"</p><p>"+ date +"</p></div>");
+			$( '#nota' ).append('<div class="divImage"><img src="'+urlImagenes+imagen+'" class="imageNota"></div>');
+			$( '#nota' ).append("<div class='divTitulo'><p class='tituloNota' align='center'>"+ titleRep +"</p><p>"+ date +"</p></div>");
 			//$( '#nota' ).append("<h8 style='display:block'>"+ date +"</h8></div>");
 			$( '#nota' ).append('<p></p>');
 			$( '#nota' ).append(data);
