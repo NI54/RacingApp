@@ -767,3 +767,7 @@ body {
 	margin:0;
 	background-color: transparent;
 }
+
+.imageNotaMenu{
+	width:4em;height:4em;border:1px solid black;border-radius:0.5em;
+}
