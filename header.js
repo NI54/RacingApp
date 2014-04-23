@@ -12,12 +12,12 @@ $(window).on("orientationchange",function(){
   {
     //$( "imgHeader" ).attr( "style", "width:25em;height:auto;" );
     
-	$('.imgHeader').css({ "width:25em;height:auto;"});
+	$('.imgHeader').css({ width:'25em',height:'auto'});
   }
   else // Landscape
   {
     //$( "imgHeader" ).attr( "style", "width:15em;height:auto;" );
-	$('.imgHeader').css({ "width:15em;height:auto;"});
+	$('.imgHeader').css({ width:'15em',height:'auto'});
     
   }
 });
