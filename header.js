@@ -4,8 +4,11 @@ $('#testList').append('<div id="header" data-role="header"  style="position:fixe
 $.mobile.orientationChangeEnabled = false;
 
 function InitializeHead(body){ 
-$(body).append('<div id="header" data-role="header"  style="position:fixed;width:100%;z-index:10;">'+'<div data-role="controlgroup" data-type="horizontal" class="ui-btn-left" style="width:20%;left:33%;top:65%;">'+'<a href="#" class="ui-btn ui-btn-twitter" style="padding:0; background-color:transparent;"><img src="images/Twitter.png" style="width:10em;"></a>'+'<a href="#" class="ui-btn ui-btn-twitter" style="padding:0;padding-left: 0.5em; background-color:transparent;"><img src="images/Facebook.png" style="width:10em;"></a>'+'<a href="#" class="ui-btn ui-btn-twitter" style="padding:0; padding-left: 0.5em; background-color:transparent;"><img src="images/Blog.png" style="width:10em;"></a>'+'<a href="#" class="ui-btn ui-btn-twitter" style="padding:0;padding-left: 0.5em; background-color:transparent;"><img src="images/Mail.png" style="width:10em;"></a>'+'</div>'+'<img src="images/Header.png" class="imgHeader" style="width:25em;height:auto;">'+'</div>');
+$(body).append('<div id="header" data-theme="c" data-role="header"  style="position:fixed;width:100%;z-index:10;">'+'<img src="images/Header.png" class="imgHeader" style="width:25em;height:auto;"><p style="padding: 0;padding-top:0.4em;padding-bottom:0.4em;position:relative;padding-left:10%;margin:0;background:#518e88;">Comunidad</p>  <div style="border-width:0.1em;border-bottom-style:solid;width:100%;height:0.2em;border-bottom-color:#518e88;"> </div> '+'</div>');
+
 }
+
+/*<div data-role="controlgroup" data-type="horizontal" class="ui-btn-left" style="width:20%;left:33%;top:65%;">'+'<a href="#" class="ui-btn ui-btn-twitter" style="padding:0; background-color:transparent;"><img src="images/Twitter.png" style="width:10em;"></a>'+'<a href="#" class="ui-btn ui-btn-twitter" style="padding:0;padding-left: 0.5em; background-color:transparent;"><img src="images/Facebook.png" style="width:10em;"></a>'+'<a href="#" class="ui-btn ui-btn-twitter" style="padding:0; padding-left: 0.5em; background-color:transparent;"><img src="images/Blog.png" style="width:10em;"></a>'+'<a href="#" class="ui-btn ui-btn-twitter" style="padding:0;padding-left: 0.5em; background-color:transparent;"><img src="images/Mail.png" style="width:10em;"></a>'+'</div>'+'*/
 
 $(window).on("orientationchange",function(){
   if(window.orientation == 0) // Portrait
@@ -13,11 +16,14 @@ $(window).on("orientationchange",function(){
     //$( "imgHeader" ).attr( "style", "width:25em;height:auto;" );
     
 	$('.imgHeader').css({ width:'25em',height:'auto'});
+	$('.imgHeaderInvi').css({ width:'25em',height:'auto',visibility:'hidden'});
+	
   }
   else // Landscape
   {
     //$( "imgHeader" ).attr( "style", "width:15em;height:auto;" );
 	$('.imgHeader').css({ width:'15em',height:'auto'});
+	$('.imgHeaderInvi').css({ width:'15em',height:'auto',visibility:'hidden'});
     
   }
 });

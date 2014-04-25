@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <link rel="stylesheet" href="Racing.css"/>
+<link rel="stylesheet" href="Seube.css"/>
 <link rel="stylesheet" href="jquery.mobile.custom.structure.css" />
 
 <script src="jquery-1.9.1.min.js"></script> 
@@ -22,7 +23,7 @@
 <body>
 		
 	
-		<div id="testList" data-role="page" >
+		<div id="testList" data-role="page" style="background:#ffffff">
 		
 		
 		
@@ -32,15 +33,18 @@
 		
 		</script>
 		
-		<div role="main" class="ui-content" id="asd">
-			<div><img src="images/Header.png" style="width:70%;visibility:hidden;"> </div>
+		<div role="main" class="ui-content" id="asd" style="background:#ffffff;">
+			<div><img src="images/Header.png" class="imgHeaderInvi"> </div>
+			
 			<!--<img src="images/Bkg.png"  style="position:fixed;left:30%;width:20em;top:10em"> !-->
 			<a href="#left-panel"><img src="images/Menu.png" style="position:fixed;width:auto;top:35%;left:-0.1%;height:40%;"></a>
+			<div style="position:fixed;height:100%;border-right-width:0.02em;border-style:solid;top:0;left:0;;
+border-color:#518e88;"></div>
 			
 			
 			<div id="noticias" filter="Noticias" class="newsContainer" >
 			</div>
-			<div id="Historia" filter="Historia" class="newsContainer">
+			<div id="Historia" filter="Historia" class="newsContainer" >
 			</div>
 			
 			
@@ -49,48 +53,17 @@
 		<div data-role="footer" data-theme="b" align="center" data-tap-toggle="false" data-position="fixed"><div style="width:50%;"><img src="images/LogoNi.png" style="display:block;width:7em"></div> </div>
 		
 		<div data-role="panel" id="left-panel" data-theme="c" data-display="push" style="border:none;position:fixed;">
-			<li data-role="list-divider">Menu</li>
-			<div data-role="controlgroup" corners="false" data-corners="false">
-				<a href="#" class="ui-btn ui-btnSlider" style="text-align: left;" onclick="ShowSection('noticias');">
-					<img src="images/Noticias.png">
+			
+			<div data-role="controlgroup" corners="false" data-corners="false" >
+				<ul data-role="listview">
+				<li data-icon="false";><a href="#"onclick="ShowSection('noticias');">
 					Noticias
-				</a>
-				<a href="#" class="ui-btn ui-btnSlider" style="text-align: left;">
-					<img src="images/Videos.png">
-					Videos
-				</a>
-				<a href="#" class="ui-btn ui-btnSlider" style="text-align: left;" onclick="ShowSection('Historia');">
-					<img src="images/Historia.png">
+				</a></li>
+				<li data-icon="false";><a href="#"onclick="ShowSection('Historia');">
 					Historia
-				</a>
-				<a href="#Historia"  class="ui-btn ui-btnSlider" style="text-align: left;">
-					<img src="images/Autoridades.png">
-					Autoridades
-				</a>
-				<a href="#" class="ui-btn ui-btnSlider" style="text-align: left;">
-					<img src="images/Publicidad.png">
-					Publicidad
-				</a>
-				<a href="#" class="ui-btn ui-btnSlider" style="text-align: left;">
-					<img src="images/Legal.png">
-					Legal
-				</a>
-				<a href="#" class="ui-btn ui-btnSlider" style="text-align: left;">
-					<img src="images/Staff.png">
-					Staff
-				</a>
-				<a href="#" class="ui-btn ui-btnSlider" style="text-align: left;">
-					<img src="images/Contacto.png">
-					Contacto
-				</a>
-				<a href="#" class="ui-btn ui-btnSlider" style="text-align: left;">
-					<img src="images/Estadisticas.png">
-					Estadisticas
-				</a>
-				<a href="#" class="ui-btn ui-btnSlider" style="text-align: left;">
-					<img src="images/Plantel.png">
-					Plantel
-				</a>
+				</a></li>
+				
+				</ul>
 			</div>
 		</div>
 		<script src="sliderMenu.js"></script> 
