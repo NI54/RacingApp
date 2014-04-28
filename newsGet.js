@@ -54,8 +54,13 @@ $( "#testList" ).on( "pagebeforecreate",function(){
 			var titleRep= title.replace(/replaceComillasDobles/g,'"');
 			titleRep= titleRep.replace(/replaceComillasSimples/g,"'");
 			
+			console.log(titleRep);
+			
 			$( '#nota' ).html("");
-			$( '#nota' ).append('<div class="divImage"><img src="'+urlImagenes+imagen+'" class="imageNota"></div>');
+			if(imagen==""){
+				imagen= "images/logo.png";
+			}
+			$( '#nota' ).append('<div class="divImage" align="center"><img src="'+urlImagenes+imagen+'" class="imageNota"></div>');
 			$( '#nota' ).append("<div class='divTitulo'><p class='tituloNota' align='center'>"+ titleRep +"</p><p>"+ date +"</p></div>");
 			//$( '#nota' ).append("<h8 style='display:block'>"+ date +"</h8></div>");
 			$( '#nota' ).append('<p></p>');
@@ -87,6 +92,7 @@ function ShowSection(name){
 		}
 	}
 	$('#'+name).show();
+	$('#headName').html( name);
 	
 	GetNews(10,name,10000,name);
 	console.log("llamop");
