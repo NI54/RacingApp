@@ -15,6 +15,14 @@
 <script src="phonegap.js"></script>
 <!--<script src="footer.js"></script>!-->
 
+<style>
+@font-face
+{
+font-family: HelveticaNeue;
+src: "font/HelveticaNeueLTStd-Bd.otf";
+}
+</style>
+
 
 
 </head>
@@ -42,25 +50,59 @@
 border-color:#518e88;"></div>
 			
 			
-			<div id="noticias" filter="Noticias" class="newsContainer" >
+			<div id="ComunidadUba" filter="ComunidadUba" class="newsContainer" >
 			</div>
-			<div id="Historia" filter="Historia" class="newsContainer" >
+			<div id="Extension CBC" filter="ExtensionCBC" class="newsContainer" >
 			</div>
+			<div id="Agenda CBC" filter="AgendaCBC" class="newsContainer" >
+			</div>
+			<div id="CBCDeportes" filter="CBCDeportes" class="newsContainer" >
+			</div>
+			<div id="CBCVos" filter="CBCVos" class="newsContainer">
+			</div>
+			<div id="GPS" filter="GPS" class="newsContainer" >
+			</div>
+			
 			
 			
 		</div>
 		
-		<div data-role="footer" data-theme="b" align="center" data-tap-toggle="false" data-position="fixed"><div style="width:50%;"><img src="images/LogoNi.png" style="display:block;width:7em"></div> </div>
+		<div data-role="footer" data-theme="b" data-tap-toggle="false" data-position="fixed" style="padding:0;border:0;margin:0;background-color: transparent;">
+			
+			
+			<div style="width:40%;">
+			<img src="images/footer1.png" width="11.1%;" ><a href="https://twitter.com/extensioncbc"><img src="images/footer2.png" width="14.3%;"></a><a href="https://www.facebook.com/cbcextension?fref=ts"><img src="images/footer3.png" width="15.2%;"></a><a href="http://extensioncbc.com.ar"><img src="images/footer4.png" width="15.6%;"></a><a href="http://extensioncbc.com.ar"><img src="images/footer5.png" width="15.5%;"></a><img src="images/footer6.png" width="28.3%;">
+			
+			</div>
+			<div style="background-color:white">
+			<div style="width:40%;">
+			<img src="images/footer7.png" width="11.1%;"><a href="https://twitter.com/extensioncbc"><img src="images/footer8.png" width="14.3%;"></a><a href="https://www.facebook.com/cbcextension?fref=ts"><img src="images/footer9.png" width="15.2%;"></a><a href="http://extensioncbc.com.ar"><img src="images/footer10.png" width="15.6%;"></a><a href="http://extensioncbc.com.ar"><img src="images/footer11.png" width="15.5%;"></a><img src="images/footer12.png" width="28.3%;">
+			</div>
+			</div>
+			
+		</div>
 		
 		<div data-role="panel" id="left-panel" data-theme="c" data-display="push" style="border:none;position:fixed;">
 			
 			<div data-role="controlgroup" corners="false" data-corners="false" >
 				<ul data-role="listview">
-				<li data-icon="false";><a href="#"onclick="ShowSection('noticias');">
-					Noticias
+				<li data-icon="false";><a href="#"onclick="ShowSection('ComunidadUba');">
+					Comunidad UBA 
 				</a></li>
-				<li data-icon="false";><a href="#"onclick="ShowSection('Historia');">
-					Historia
+				<li data-icon="false";><a href="#"onclick="ShowSection('AgendaCBC');">
+					Agenda CBC
+				</a></li>
+				<li data-icon="false";><a href="#"onclick="ShowSection('ExtensionCBC');">
+					Extensión CBC
+				</a></li>
+				<li data-icon="false";><a href="#"onclick="ShowSection('CBCDeportes');">
+					CBC Deportes
+				</a></li>
+				<li data-icon="false";><a href="#"onclick="ShowSection('CBCVos');">
+					CBC+Vos
+				</a></li>
+				<li data-icon="false";><a href="#"onclick="ShowSection('GPS');">
+					GPS
 				</a></li>
 				
 				</ul>
@@ -74,9 +116,14 @@ border-color:#518e88;"></div>
 			$( "#testList" ).on( "pagebeforecreate",function(){
 				//GetNews(10,"Noticias",10000);
 				//InitializeFoot("#testList");
-				GetNews(10,"Noticias",10000);
-				AddSection("noticias",false);
-				AddSection("Historia",true);
+				GetNews(10,"ComunidadUba",10000,"ComunidadUba");
+				AddSection("ComunidadUba",false);
+				AddSection("AgendaCBC",true);
+				AddSection("ExtensionCBC",true);
+				AddSection("CBCDeportes",true);
+				AddSection("CBCVos",true);
+				AddSection("GPS",true);
+				
 				//agregar inicializacion de header y footer tmb
 			});
 			

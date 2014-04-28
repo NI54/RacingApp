@@ -2,14 +2,19 @@
 //var urlPhp='http://localhost/server/getArticlesR.php?cu=';
 
 
-var urlArt='http://nuevosociales.com.ar/app/article/art';
+//var urlArt='http://nuevosociales.com.ar/app/article/art';
+var urlArt='http://extensioncbc.com.ar/app/article/art';
 //var urlPhp='http://www.ni54.com/Racing/getArticlesR.php?cu=';
-var urlPhp='http://nuevosociales.com.ar/app/getArticlesR.php?cu=';
-var urlImagenes= 'http://nuevosociales.com.ar/app/';
+//var urlPhp='http://nuevosociales.com.ar/app/getArticlesR.php?cu=';
+var urlPhp='http://extensioncbc.com.ar/app/getArticlesR.php?cu=';
+//var urlImagenes= 'http://nuevosociales.com.ar/app/';
+var urlImagenes= 'http://extensioncbc.com.ar/app/';
 
 
-function GetNews(cuantity,category,index){
-$( "#noticias" ).load(urlPhp+cuantity+'&ca='+category+'&ix='+index, function( response, status, xhr ) {
+function GetNews(cuantity,category,index,div){
+console.log(cuantity,category,index,div);
+$( "#"+div ).load(urlPhp+cuantity+'&ca='+category+'&ix='+index, function( response, status, xhr ) {
+	console.log("asdas");
   if ( status == "error" ) {
     var msg = "Sorry but there was an error: ";
     //$( "#error" ).html( msg + xhr.status + " " + xhr.statusText );
@@ -37,9 +42,10 @@ $( "#testList" ).on( "pagebeforecreate",function(){
 		//console.log(articleNumber);
 		
 		
-		$.get("http://nuevosociales.com.ar/app/proxy.php?url=article/art"+articleNumber+'.txt', function( data ) {
+		//$.get("http://nuevosociales.com.ar/app/proxy.php?url=article/art"+articleNumber+'.txt', function( data ) {
+		$.get("http://extensioncbc.com.ar/app/proxy.php?url=article/art"+articleNumber+'.txt', function( data ) {
 		//$.get( urlArt+articleNumber+'.txt', function( data ) {
-			//console.log(title);
+			console.log("adsdasdas");
 			//console.log(data);
 			//$( '#nota' ).append( data);
 			
@@ -59,3 +65,29 @@ $( "#testList" ).on( "pagebeforecreate",function(){
 			
 		 });
 	}
+	
+	
+	
+	
+var arraySecciones= new Array();
+var index=0;
+
+function AddSection(name,hide){
+	arraySecciones[index]= name;
+	if(hide==true){
+		$('#'+name).hide();
+	}
+	index++;
+};
+
+function ShowSection(name){
+	 for (a=0;a<arraySecciones.length;a++){
+		if(arraySecciones[a]!=name){
+			$('#'+arraySecciones[a]).hide();
+		}
+	}
+	$('#'+name).show();
+	
+	GetNews(10,name,10000,name);
+	console.log("llamop");
+};

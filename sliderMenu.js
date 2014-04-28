@@ -15,23 +15,3 @@ $( document ).on( "pagecreate", "#testList", function() {
         }
     });
 });
-
-var arraySecciones= new Array();
-var index=0;
-
-function AddSection(name,hide){
-	arraySecciones[index]= name;
-	if(hide==true){
-		$('#'+name).hide();
-	}
-	index++;
-};
-
-function ShowSection(name){
-	 for (a=0;a<arraySecciones.length;a++){
-		if(arraySecciones[a]!=name){
-			$('#'+arraySecciones[a]).hide();
-		}
-	}
-	$('#'+name).show();
-};
