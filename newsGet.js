@@ -63,7 +63,7 @@ $( "#testList" ).on( "pagebeforecreate",function(){
 				imagen= "images/logo.png";
 			}
 			$( '#nota' ).append('<div class="divImage" align="center"><img src="'+urlImagenes+imagen+'" class="imageNota"></div>');
-			$( '#nota' ).append("<div class='divTitulo'><p class='tituloNota' align='center'>"+ titleRep +"</p><p>"+ date +"</p></div>");
+			$( '#nota' ).append("<div class='divTitulo'><p class='tituloNota' align='center'>"+ titleRep +"</p><p style='font-size:0.5em'>"+ date +"</p></div>");
 			//$( '#nota' ).append("<h8 style='display:block'>"+ date +"</h8></div>");
 			$( '#nota' ).append('<p></p>');
 			$( '#nota' ).append(data);

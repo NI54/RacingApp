@@ -4,7 +4,7 @@ $('#testList').append('<div id="header" data-role="header"  style="position:fixe
 $.mobile.orientationChangeEnabled = false;
 
 function InitializeHead(body){ 
-$(body).append('<div id="header" data-theme="c" data-role="header"  style="position:fixed;width:100%;z-index:10;background-color:#1e8f89;">'+'<img src="images/Header.png" class="imgHeader" style="width:25em;height:auto;"><p id="headName" style="padding: 0;padding-top:0.4em;padding-bottom:0.4em;position:relative;padding-left:10%;margin:0;background:#1e8f89;">Comunidad UBA</p>  <div style="border-width:0.1em;border-bottom-style:solid;width:100%;height:0.2em;border-bottom-color:#1e8f89;border-top-style:solid;width:100%;border-top-color:#ffffff;"> </div> '+'</div>');
+$(body).append('<div id="header" data-theme="c" data-role="header"  style="position:fixed;width:100%;z-index:10;background-color:#1e8f89;border:0;">'+'<img src="images/Header.png" class="imgHeader" style="width:25em;height:auto;"><p id="headName" style="padding: 0;padding-top:0.4em;padding-bottom:0.4em;position:relative;padding-left:10%;margin:0;background:#1e8f89;">Comunidad UBA</p>  <div style="border-width:0.1em;border-bottom-style:solid;width:100%;height:0.2em;border-bottom-color:#1e8f89;border-top-style:solid;width:100%;border-top-color:#ffffff;"> </div> '+'</div>');
 
 }
 
