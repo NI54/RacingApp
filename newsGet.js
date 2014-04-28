@@ -41,6 +41,8 @@ $( "#testList" ).on( "pagebeforecreate",function(){
 	function Clikeado(title,date,imagen,articleNumber){
 		//console.log(articleNumber);
 		
+		$( '#nota' ).html("<img src='images/ajax-loader.gif' align='center' style='display:block;'>");
+		
 		
 		//$.get("http://nuevosociales.com.ar/app/proxy.php?url=article/art"+articleNumber+'.txt', function( data ) {
 		$.get("http://extensioncbc.com.ar/app/proxy.php?url=article/art"+articleNumber+'.txt', function( data ) {
