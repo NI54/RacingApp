@@ -220,7 +220,7 @@ html .ui-alt-icon .ui-radio-off:after {
 html .ui-bar-a .ui-bar-inherit,
 html .ui-body-a .ui-bar-inherit,
 html body .ui-group-theme-a .ui-bar-inherit {
-	background-color: #01A8DE /*{a-bar-background-color}*/;
+	background-color: #ffffff /*{a-bar-background-color}*/;
 	border-color: #005c7a /*{a-bar-border}*/;
 	color: #032747 /*{a-bar-color}*/;
 	text-shadow: 0 /*{a-bar-shadow-x}*/ 1px /*{a-bar-shadow-y}*/ 0 /*{a-bar-shadow-radius}*/ #eeeeee /*{a-bar-shadow-color}*/;
@@ -234,7 +234,7 @@ html body .ui-group-theme-a .ui-bar-inherit {
 .ui-overlay-a,
 .ui-page-theme-a,
 .ui-page-theme-a .ui-panel-wrapper {
-	background-color: #EEEEEE /*{a-page-background-color}*/;
+	background-color: #ffffff /*{a-page-background-color}*/;
 	border-color: #bbbbbb /*{a-page-border}*/;
 	color: #333333 /*{a-page-color}*/;
 	text-shadow: 0 /*{a-page-shadow-x}*/ 1px /*{a-page-shadow-y}*/ 0 /*{a-page-shadow-radius}*/ #f3f3f3 /*{a-page-shadow-color}*/;
@@ -572,7 +572,7 @@ html .ui-bar-c .ui-body-inherit,
 html .ui-body-c .ui-body-inherit,
 html body .ui-group-theme-c .ui-body-inherit,
 html .ui-panel-page-container-c {
-	background-color: #518e88 /*{c-body-background-color}*/;
+	background-color: #088f89 /*{c-body-background-color}*/;
 	border-color: #2c4e4a /*{c-body-border}*/;
 	color: #ffffff /*{c-body-color}*/;
 	text-shadow: 0 /*{c-body-shadow-x}*/ 1px /*{c-body-shadow-y}*/ 0 /*{c-body-shadow-radius}*/ #444444 /*{c-body-shadow-color}*/;
@@ -619,7 +619,7 @@ html .ui-bar-c .ui-btn:visited,
 html .ui-body-c .ui-btn:visited,
 html body .ui-group-theme-c .ui-btn:visited,
 html head + body .ui-btn.ui-btn-c:visited {
-	background-color: #3d6c69 /*{c-bup-background-color}*/;
+	background-color: #006c69 /*{c-bup-background-color}*/;
 	border-color: #213b39 /*{c-bup-border}*/;
 	color: #ffffff /*{c-bup-color}*/;
 	text-shadow: 0 /*{c-bup-shadow-x}*/ 1px /*{c-bup-shadow-y}*/ 0 /*{c-bup-shadow-radius}*/ #444444 /*{c-bup-shadow-color}*/;
@@ -773,7 +773,7 @@ body {
 	/*border:1px solid black;border-radius:0.5em;*/
 }
 .newsContainer{
-	position:relative;left:10%;padding-bottom:1em;width:80%;padding-top:4.1em;
+	position:relative;left:10%;padding-bottom:1em;width:80%;padding-top:0.5em;
 }
 
 .divImage{
@@ -797,4 +797,15 @@ body {
 }
 .ui-page {
 background:#ffffff;
+}
+
+.botonSlider{
+	border-bottom-width:2px;border-bottom-style:solid;border-bottom-color:#006d6a;
+}
+
+.borderBtnSliderTop{
+	width:100%;height:0.5em; background:linear-gradient(#088f89,#006c69);border:0;
+}
+.borderBtnSliderBottom{
+	width:100%;height:0.5em; background:linear-gradient(#006c69, #088f89);
 }

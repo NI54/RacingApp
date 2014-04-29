@@ -53,7 +53,7 @@ background:#ffffff;
 			<div><img src="images/Header.png" class="imgHeaderInvi"> </div>
 			
 			<!--<img src="images/Bkg.png"  style="position:fixed;left:30%;width:20em;top:10em"> !-->
-			<a href="#left-panel"><img src="images/Menu.png" style="position:fixed;width:auto;top:22%;left:-0.1%;height:60%;z-index:1000;"></a>
+			<a href="#left-panel"><img src="images/Menu.png" style="position:fixed;width:auto;top:22%;left:-0.1%;height:60%;z-index:2;"></a>
 			<div style="position:fixed;height:100%;border-right-width:0.02em;border-style:solid;top:0;left:0;z-index:1000;
 border-color:#518e88;"></div>
 			
@@ -96,29 +96,59 @@ border-color:#518e88;"></div>
 			
 		</div>
 		
-		<div data-role="panel" id="left-panel" data-theme="c" data-display="push" style="border:none;position:fixed;">
+		<div data-role="panel" id="left-panel" data-theme="c" data-display="push" style="border:0;position:fixed;margin:0;">
 			
 			<div data-role="controlgroup" corners="false" data-corners="false" >
 				<ul data-role="listview">
-				<li data-icon="false";><a href="#"onclick="ShowSection('ComunidadUba');">
+				<!--<li data-icon="false"; class="botonSlider" style="border-width:0.5em;border-bottom-style:solid;border-bottom-color:#037c77;"><a href="#"onclick="ShowSection('ComunidadUba');">
 					Comunidad UBA 
-				</a></li>
-				<li data-icon="false";><a href="#"onclick="ShowSection('AgendaCBC');">
-					Agenda CBC
-				</a></li>
-				<li data-icon="false";><a href="#"onclick="ShowSection('ExtensionCBC');">
-					Extensión CBC
-				</a></li>
-				<li data-icon="false";><a href="#"onclick="ShowSection('CBCDeportes');">
-					CBC Deportes
-				</a></li>
-				<li data-icon="false";><a href="#"onclick="ShowSection('CBCVos');">
-					CBC+Vos
-				</a></li>
-				<li data-icon="false";><a href="#"onclick="ShowSection('GPS');">
-					GPS
-				</a></li>
+				</a></li>!-->
 				
+				<div class="borderBtnSliderTop" style="height:4em;"></div>
+				<li data-icon="false" class="botonSlider">
+				<div class="borderBtnSliderTop"></div>
+				<a href="#"onclick="ShowSection('ComunidadUba');" style="border:0;">
+					Comunidad UBA 
+				</a>
+				<div class= "borderBtnSliderBottom"></div>
+				</li>
+				
+				<li data-icon="false" class="botonSlider">
+				<div class="borderBtnSliderTop"></div>
+				<a href="#"onclick="ShowSection('AgendaCBC');" style="border:0;">
+					Agenda CBC
+				</a>
+				<div class= "borderBtnSliderBottom"></div>
+				</li>
+				<li data-icon="false" class="botonSlider">
+				<div class="borderBtnSliderTop"></div>
+				<a href="#"onclick="ShowSection('ExtensionCBC');" style="border:0;">
+					Extensión CBC
+				</a>
+				<div class= "borderBtnSliderBottom"></div>
+				</li>
+				<li data-icon="false" class="botonSlider">
+				<div class="borderBtnSliderTop"></div>
+				<a href="#"onclick="ShowSection('CBCDeportes');" style="border:0;">
+					CBC Deportes
+				</a>
+				<div class= "borderBtnSliderBottom"></div>
+				</li>
+				<li data-icon="false" class="botonSlider">
+				<div class="borderBtnSliderTop"></div>
+				<a href="#"onclick="ShowSection('CBCVos');" style="border:0;">
+					CBC+Vos
+				</a>
+				<div class= "borderBtnSliderBottom"></div>
+				</li>
+				<li data-icon="false" class="botonSlider">
+				<div class="borderBtnSliderTop"></div>
+				<a href="#"onclick="ShowSection('GPS');" style="border:0;">
+					GPS
+				</a>
+				<div class= "borderBtnSliderBottom"></div>
+				</li>
+				<div class="borderBtnSliderBottom" style="height:4em;"></div>
 				</ul>
 			</div>
 		</div>
