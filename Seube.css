@@ -807,15 +807,22 @@ background:#ffffff;
 	width:100%;height:0.5em; 
 	background:linear-gradient(#088f89,#006c69);
 	background: -moz-linear-gradient(#088f89,#006c69);
-background: -ms-linear-gradient(#088f89,#006c69);
-background: -o-linear-gradient(#088f89,#006c69);
-background: -webkit-gradient(linear, 0 0, 0 100%, from(#088f89), to(#006c69));
-background: -webkit-linear-gradient(#088f89,#006c69);
-background: linear-gradient(#088f89,#006c69);
+	background: -ms-linear-gradient(#088f89,#006c69);
+	background: -o-linear-gradient(#088f89,#006c69);
+	background: -webkit-gradient(linear, 0 0, 0 100%, from(#088f89), to(#006c69));
+	background: -webkit-linear-gradient(#088f89,#006c69);
+	background: linear-gradient(#088f89,#006c69);
 
 	border:0;
 	
 }
 .borderBtnSliderBottom{
-	width:100%;height:0.5em; background:linear-gradient(#006c69, #088f89);
+	width:100%;height:0.5em; 
+	background:linear-gradient(#006c69, #088f89);
+	background: -moz-linear-gradient(#006c69, #088f89);
+background: -ms-linear-gradient(#006c69, #088f89);
+background: -o-linear-gradient(#006c69, #088f89);
+background: -webkit-gradient(linear, 0 0, 0 100%, from(#006c69), to(#088f89));
+background: -webkit-linear-gradient(#006c69, #088f89);
+background: linear-gradient(#006c69, #088f89);
 }
