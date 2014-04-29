@@ -773,7 +773,7 @@ body {
 	/*border:1px solid black;border-radius:0.5em;*/
 }
 .newsContainer{
-	position:relative;left:10%;padding-bottom:10em;width:80%;padding-top:3.5em;
+	position:relative;left:10%;padding-bottom:2em;width:80%;padding-top:3.5em;
 }
 
 .divImage{
@@ -806,8 +806,13 @@ background:#ffffff;
 .borderBtnSliderTop{
 	width:100%;height:0.5em; 
 	background:linear-gradient(#088f89,#006c69);
-	background:-webkit-linear-gradient(top, #088f89,    #006c69);
-	background:-moz-linear- gradient(top, #088f89, #006c69);
+	background: -moz-linear-gradient(#088f89,#006c69);
+background: -ms-linear-gradient(#088f89,#006c69);
+background: -o-linear-gradient(#088f89,#006c69);
+background: -webkit-gradient(linear, 0 0, 0 100%, from(#088f89), to(#006c69));
+background: -webkit-linear-gradient(#088f89,#006c69);
+background: linear-gradient(#088f89,#006c69);
+
 	border:0;
 	
 }
