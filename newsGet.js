@@ -66,7 +66,7 @@ $( "#testList" ).on( "pagebeforecreate",function(){
 			$( '#nota' ).append("<div class='divTitulo'><p class='tituloNota' align='center'>"+ titleRep +"</p><p style='font-size:0.5em'>"+ date +"</p></div>");
 			//$( '#nota' ).append("<h8 style='display:block'>"+ date +"</h8></div>");
 			//$( '#nota' ).append('<p></p>');
-			$( '#nota' ).append(data);
+			$( '#nota' ).append('<div style="position:relative;top:-6em;">'+data+'</div>');
 			
 			
 			
@@ -98,4 +98,6 @@ function ShowSection(name){
 	
 	GetNews(10,name,10000,name);
 	console.log("llamop");
+	
+	$( "#left-panel" ).panel( "close" );
 };
